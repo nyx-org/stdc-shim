@@ -10,5 +10,6 @@ size_t strlen(const char *s);
 char *strrev(char *s);
 char *strrchr(const char *s, int c);
 int strncmp(const char *s1, const char *s2, size_t n);
+char *strncat(char *destination, const char *source, size_t num);
 
 #endif

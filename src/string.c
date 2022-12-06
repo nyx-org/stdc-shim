@@ -78,3 +78,21 @@ int strncmp(const char *s1, const char *s2, size_t n)
 {
     return memcmp(s1, s2, n);
 }
+
+char *strncat(char *destination, const char *source, size_t num)
+{
+    size_t i = 0;
+    while (destination[i])
+    {
+        i++;
+    }
+    size_t j = 0;
+    while (j < num && source[j])
+    {
+        destination[i] = source[j];
+        i++;
+        j++;
+    }
+    destination[i] = '\0';
+    return destination;
+}
