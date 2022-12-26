@@ -1,5 +1,12 @@
 #include <stdc-shim/string.h>
 
+char *strncpy(char *destination, const char *source, size_t num)
+{
+    while ((*destination++ = *source++) && num--)
+        ;
+    return destination;
+}
+
 void *memcpy(void *dest, const void *src, size_t n)
 {
     char *d = dest;
