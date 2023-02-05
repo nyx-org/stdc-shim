@@ -103,3 +103,4 @@ char *strncat(char *destination, const char *source, size_t num)
     destination[i] = '\0';
     return destination;
 }
+
